@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- Gerçek uygulamanın <html>/<body> class'larını buraya kopyalayın (font değişkenleri dahil). -->
+<html lang="tr" class="h-full antialiased">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo</title>
+<!-- Uygulamanın DERLENMİŞ CSS dosyaları (build çıktısından kopya) -->
+<link rel="stylesheet" href="uygulama.css">
+<!-- YEDEK: şablon tek başına düzgün görünsün diye Tailwind CDN. Kendi derlenmiş CSS'inizi koyunca SİLİN
+     (CDN tüm class'ları üretir; gerçek görünüm sadakati derlenmiş CSS'ten gelir). -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<!-- Derlenmiş CSS'te olmayan ek stiller (önekli seçiciler) -->
+<link rel="stylesheet" href="ek.css">
+<!-- İkon seti: uygulama ne kullanıyorsa, sabit sürümle -->
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="flex min-h-full flex-col">
+  <div id="kabuk"></div>
+  <main id="gorunum" class="flex-1"></main>
+  <div id="pencere-kok"></div>
+  <!-- #ov-kok: kaydet.mjs overlay'i buraya çizer (yoksa kendisi oluşturur) -->
+  <div id="ov-kok" style="position:fixed;inset:0;pointer-events:none;z-index:9999"></div>
+  <script src="durum.js"></script>
+  <script src="ornek-ekran.js"></script>
+  <script>Demo.basla();</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "title": "Sample product — completing a record",
+  "settings": { "language": "en", "brand": "Sample Product", "badge": "Demo data" },
+  "scenes": [
+    { "id": "intro", "narration": "Hi. In this video we show how to complete a record.", "screen": "Title card",
+      "steps": [ { "type": "title", "title": "Completing a record", "subtitle": "Step-by-step guide", "ms": 4000 } ] },
+    { "id": "list", "narration": "Today's records appear in the list. Click the record you want to complete.", "screen": "List is pointed out, first record is clicked",
+      "steps": [ { "type": "goto", "hash": "#ana" }, { "type": "wait", "ms": 800 },
+        { "type": "arrow", "target": "liste", "label": "Today's records", "side": "bottom", "ms": 2200 },
+        { "type": "click", "target": "kayit-1", "arrow": "Click the record", "side": "bottom" }, { "type": "wait", "ms": 800 } ] },
+    { "id": "dialog", "narration": "The record dialog opens. Press Complete.", "screen": "Dialog spotlighted, Complete clicked",
+      "steps": [ { "type": "spotlight", "target": "pencere", "ms": 2000 }, { "type": "clear" },
+        { "type": "click", "target": "tamamla", "arrow": "Complete", "side": "right" }, { "type": "wait", "ms": 1200 } ] },
+    { "id": "result", "narration": "The record status changes to Completed.", "screen": "Status label pointed out",
+      "steps": [ { "type": "arrow", "target": "durum-1", "label": "Completed", "side": "left", "ms": 2500 } ] },
+    { "id": "flow", "narration": "In the background the system updates the record and notifies the right person.", "screen": "Flow diagram",
+      "steps": [ { "type": "title", "title": "What happens behind the scenes", "ms": 5000,
+        "flow": [["Panel", "Record completed"], ["Database", "Status updated"], ["Notification", "Sent to the owner"]] } ] },
+    { "id": "outro", "narration": "To sum up: open the record, complete it, and the system does the rest.", "screen": "Closing card",
+      "steps": [ { "type": "title", "title": "Open · Complete · Done", "subtitle": "The system does the rest", "chips": true, "ms": 4000 } ] }
+  ]
+}

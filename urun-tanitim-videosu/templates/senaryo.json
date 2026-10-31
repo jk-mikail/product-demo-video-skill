@@ -1,0 +1,22 @@
+{
+  "baslik": "Örnek ürün — kayıt tamamlama",
+  "ayar": { "marka": "Örnek Ürün", "rozet": "Demo verisi" },
+  "sahneler": [
+    { "id": "giris", "anlatim": "Merhaba. Bu videoda bir kaydı nasıl tamamlayacağınızı göstereceğiz.", "ekran": "Başlık kartı",
+      "adimlar": [ { "tur": "baslik", "ust": "Kayıt tamamlama", "alt": "Adım adım kullanım", "ms": 4000 } ] },
+    { "id": "liste", "anlatim": "Bugünün kayıtları listede görünür. Tamamlamak istediğiniz kayda tıklayın.", "ekran": "Liste oklanır, ilk kayıt tıklanır",
+      "adimlar": [ { "tur": "git", "hash": "#ana" }, { "tur": "bekle", "ms": 800 },
+        { "tur": "ok", "sel": "liste", "etiket": "Bugünün kayıtları", "yon": "alt", "ms": 2200 },
+        { "tur": "tikla", "sel": "kayit-1", "ok": "Kayda tıklayın", "yon": "alt" }, { "tur": "bekle", "ms": 800 } ] },
+    { "id": "pencere", "anlatim": "Kayıt penceresi açıldı. Tamamla düğmesine basın.", "ekran": "Pencere spotla vurgulanır, Tamamla tıklanır",
+      "adimlar": [ { "tur": "isik", "sel": "pencere", "ms": 2000 }, { "tur": "temizle" },
+        { "tur": "tikla", "sel": "tamamla", "ok": "Tamamla", "yon": "sag" }, { "tur": "bekle", "ms": 1200 } ] },
+    { "id": "sonuc", "anlatim": "Kaydın durumu Tamamlandı olarak güncellenir.", "ekran": "Durum etiketi oklanır",
+      "adimlar": [ { "tur": "ok", "sel": "durum-1", "etiket": "Tamamlandı", "yon": "sol", "ms": 2500 } ] },
+    { "id": "akis", "anlatim": "Arka planda sistem kaydı günceller ve ilgili kişiye bildirim gönderir.", "ekran": "Akış şeması",
+      "adimlar": [ { "tur": "baslik", "ust": "Arka planda olanlar", "ms": 5000,
+        "sema": [["Panel", "Kayıt tamamlanır"], ["Veritabanı", "Durum güncellenir"], ["Bildirim", "İlgili kişiye gider"]] } ] },
+    { "id": "kapanis", "anlatim": "Özetle: kaydı açın, tamamlayın, gerisini sistem halleder.", "ekran": "Kapanış kartı",
+      "adimlar": [ { "tur": "baslik", "ust": "Aç · Tamamla · Bitti", "alt": "Gerisini sistem halleder", "cipler": true, "ms": 4000 } ] }
+  ]
+}

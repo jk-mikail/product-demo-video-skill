@@ -1,0 +1,38 @@
+{
+  "name": "product-demo-video-skill",
+  "version": "1.0.0",
+  "description": "Claude Agent Skill: animated product demo / tutorial videos for web apps (replica UI, scripted cursor & arrows, 1080p + vertical mobile, transcript + SRT). English + Turkish editions.",
+  "type": "module",
+  "bin": {
+    "product-demo-video-skill": "bin/cli.mjs"
+  },
+  "files": [
+    "bin/",
+    "product-demo-video/",
+    "urun-tanitim-videosu/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "agent-skills",
+    "skill",
+    "demo-video",
+    "screen-recording",
+    "playwright",
+    "tutorial-video"
+  ],
+  "author": "Japon Konutları",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jk-mikail/product-demo-video-skill.git"
+  },
+  "homepage": "https://github.com/jk-mikail/product-demo-video-skill#readme",
+  "bugs": {
+    "url": "https://github.com/jk-mikail/product-demo-video-skill/issues"
+  }
+}

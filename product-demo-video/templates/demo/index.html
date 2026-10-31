@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- Copy the real app's <html>/<body> classes here (including font variable classes). -->
+<html lang="en" class="h-full antialiased">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo</title>
+<!-- The app's COMPILED CSS files (copied from the build output) -->
+<link rel="stylesheet" href="uygulama.css">
+<!-- FALLBACK: Tailwind CDN so the template looks right on its own. DELETE it once your compiled CSS is in place
+     (the CDN generates every class; real visual fidelity comes from your compiled CSS). -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<!-- Extra styles missing from the compiled CSS (prefixed selectors) -->
+<link rel="stylesheet" href="ek.css">
+<!-- Icon set: whatever the app uses, pinned version -->
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="flex min-h-full flex-col">
+  <div id="kabuk"></div>
+  <main id="gorunum" class="flex-1"></main>
+  <div id="pencere-kok"></div>
+  <!-- #ov-kok: kaydet.mjs draws the overlay here (creates it if missing) -->
+  <div id="ov-kok" style="position:fixed;inset:0;pointer-events:none;z-index:9999"></div>
+  <script src="durum.js"></script>
+  <script src="example-view.js"></script>
+  <script>Demo.start();</script>
+</body>
+</html>
